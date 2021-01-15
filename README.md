@@ -16,7 +16,7 @@ yarn add polish-utils
 
 ## About
 
-I wrote this library because I needed a clean solution for extracting data and validating polish identification numbers such as PESEL.
+I wrote this library because I needed a clean solution for extracting data and validating polish identification numbers such as PESEL or NIP.
 
 This library is written in TypeScript and covered with tests.
 
@@ -45,6 +45,32 @@ const pesel = new PESEL('87111111111')
 pesel.isValid // true
 pesel.getGender() // "male"
 pesel.getDateOfBirth() // Date object: Wed Nov 11 1987 00:00:00 GMT+0100 (Central European Standard Time)
+```
+
+### NIP
+
+`NIP` is a class that accepts a NIP string in a constructor
+
+#### Properties
+
+| Property                  | Type      | Description                                                                                                        |
+|---------------------------|-----------|--------------------------------------------------------------------------------------------------------------------|
+| isValid                   | `boolean` | Filtered entry string must have exactly 10 numerical characters, last character must match the calculated checksum |
+| getIssuingTaxOfficeCode() | `string`  | ID of the tax office that issues NIP                                                                               |
+
+
+#### Code
+
+```ts
+import { NIP } from 'polish-utils'
+
+const nip1 = new NIP('7622654927')
+const nip2 = new NIP('12-34-567-328')
+
+nip1.isValid // true
+nip2.isValid // true
+nip1.getIssuingTaxOfficeCode() // "762"
+nip2.getIssuingTaxOfficeCode() // "123"
 ```
 
 ## Contributing
