@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declarationDir": "./dist/types",
+    "declaration": true,
+    "module": "esnext",
+    "target": "ES6",
+    "moduleResolution": "Node",
+    "resolveJsonModule": false
+  }
+}

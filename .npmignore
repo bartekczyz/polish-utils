@@ -1,0 +1,16 @@
+# infrastructure files
+.idea
+node_modules
+yarn.lock
+*.log
+
+# project files
+src
+__tests__
+tsconfig.json
+eslintrc.js
+.prettierrc
+.gitignore
+.eslintrc.js
+jest.config.js
+rollup.config.js
