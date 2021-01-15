@@ -1,7 +1,7 @@
 {
   "name": "polish-utils",
   "description": "Lightweight library for extracting data and validating polish identification numbers such as PESEL",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -10,7 +10,10 @@
     "url": "https://github.com/bartekczyz/polish-utils.git"
   },
   "author": "Bartłomiej Czyż <bartek@czyz.it>",
-  "keywords": ["polish utils", "pesel"],
+  "keywords": [
+    "polish utils",
+    "pesel"
+  ],
   "license": "MIT",
   "private": false,
   "scripts": {
