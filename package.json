@@ -21,7 +21,7 @@
   "scripts": {
     "build": "rimraf dist && rollup --config rollup.config.js",
     "prettier": "prettier --check src/**/*.ts",
-    "lint": "yarn eslint && yarn prettier",
+    "lint": "yarn eslint src __tests__ && yarn prettier",
     "test": "jest",
     "test:watch": "jest --watch"
   },
