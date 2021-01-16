@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['prettier/@typescript-eslint'],
+    extends: ['plugin:@bartekczyz/recommended', 'plugin:@bartekczyz/typescript'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 6,
