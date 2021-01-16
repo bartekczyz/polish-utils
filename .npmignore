@@ -14,3 +14,4 @@ eslintrc.js
 .eslintrc.js
 jest.config.js
 rollup.config.js
+README.md
