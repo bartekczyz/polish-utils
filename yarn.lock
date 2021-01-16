@@ -845,10 +845,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bartekczyz/eslint-plugin@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@bartekczyz/eslint-plugin/-/eslint-plugin-0.1.0.tgz#6ac78e472b506b228a264eea714384ec3888b996"
-  integrity sha512-PTREqaMc8KRb00wejpKizMPaXYxo6xDJ50bQiBSWClMhgg9MBnGsUhMjKBJu6pU4TjjLKGE3+fpPMZYBM4F6xw==
+"@bartekczyz/eslint-plugin@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@bartekczyz/eslint-plugin/-/eslint-plugin-0.1.1.tgz#8111e0e761d04cee2d78b1fc2cbbd0d43a9778bb"
+  integrity sha512-w5mbTTV6N2+3nf5nqZhI6kGntgQbLEv1PX8RkePMzgepDKWThJZnShjRvoaoKvFg8YJXx9NQowUKHzZmthT/Ng==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.13.0"
     "@typescript-eslint/parser" "^4.13.0"
