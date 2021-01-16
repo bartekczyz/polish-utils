@@ -10,6 +10,7 @@ describe('pesel', () => {
         ;[...validMales, ...validFemales].forEach((peselNumber) => {
             it(`using ${peselNumber}`, () => {
                 const pesel = new PESEL(peselNumber)
+
                 expect(pesel.isValid).toEqual(true)
             })
         })
@@ -19,6 +20,7 @@ describe('pesel', () => {
         ;[...invalidMales, ...invalidFemales].forEach((peselNumber) => {
             it(`using ${peselNumber}`, () => {
                 const pesel = new PESEL(peselNumber)
+
                 expect(pesel.isValid).toEqual(false)
             })
         })
@@ -28,6 +30,7 @@ describe('pesel', () => {
         validMales.forEach((peselNumber) => {
             it(`using valid ${peselNumber}`, () => {
                 const pesel = new PESEL(peselNumber)
+
                 expect(pesel.getGender()).toEqual('male')
             })
         })
@@ -35,6 +38,7 @@ describe('pesel', () => {
         invalidMales.forEach((peselNumber) => {
             it(`using invalid ${peselNumber}`, () => {
                 const pesel = new PESEL(peselNumber)
+
                 expect(pesel.getGender()).toEqual('male')
             })
         })
@@ -44,12 +48,14 @@ describe('pesel', () => {
         validFemales.forEach((peselNumber) => {
             it(`using valid ${peselNumber}`, () => {
                 const pesel = new PESEL(peselNumber)
+
                 expect(pesel.getGender()).toEqual('female')
             })
         })
         invalidFemales.forEach((peselNumber) => {
             it(`using valid ${peselNumber}`, () => {
                 const pesel = new PESEL(peselNumber)
+
                 expect(pesel.getGender()).toEqual('female')
             })
         })

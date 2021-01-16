@@ -62,9 +62,7 @@ export class PESEL {
         const weights = [1, 3, 7, 9]
         const digits = `${this.pesel}`.split('').map((digit) => +digit)
         const lastDigit = digits.splice(-1)[0]
-        const control =
-            digits.reduce((previous, current, index) => previous + current * weights[index % 4]) %
-            10
+        const control = digits.reduce((previous, current, index) => previous + current * weights[index % 4]) % 10
 
         return 10 - (control === 0 ? 10 : control) === lastDigit
     }
