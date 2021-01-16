@@ -30,6 +30,7 @@ export class PESEL {
             return null
         }
 
+        // eslint-disable-next-line prefer-const
         let [year, month, day] = this.pesel.match(/.{1,2}/g).map((part) => +part || 0)
         let baseYear = 1900
 

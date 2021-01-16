@@ -4,7 +4,7 @@ export class NIP {
     private readonly nip: string
 
     constructor(nip: string) {
-        this.nip = nip.replace(/[ \-]/gi, '')
+        this.nip = nip.replace(/[ -]/gi, '')
         this.valid = this.validate()
     }
 
