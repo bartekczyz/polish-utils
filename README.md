@@ -1,5 +1,10 @@
 # polish-utils 🇵🇱 🛠
 
+[![minified size](https://badgen.net/bundlephobia/min/polish-utils)](https://badgen.net/bundlephobia/min/polish-utils)
+[![minzipped size](https://badgen.net/bundlephobia/minzip/polish-utils)](https://badgen.net/bundlephobia/minzip/polish-utils)
+[![dependency count](https://badgen.net/bundlephobia/dependency-count/polish-utils)](https://badgen.net/bundlephobia/dependency-count/polish-utils)
+[![tree shaking](https://badgen.net/bundlephobia/tree-shaking/polish-utils)](https://badgen.net/bundlephobia/tree-shaking/polish-utils)
+
 ## Getting started
 
 Depending on the package manager, add `polish-utils` to your project: 
